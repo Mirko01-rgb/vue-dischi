@@ -22,21 +22,14 @@
   <body>
     <div  id="app" class="background"  >
       <div  v-for = "item in singers" class="card flex">
-        <div   class="box-text flex ">
-          <p>{{item.author}}</p>
-        </div>
-
-        <div class="box-text flex">
-          <p>{{item.title}}</p>
-
-        </div>
-        <div class="box-text flex">
-          <p>{{item.genre}}</p>
-
-        </div>
-
+       <p>{{item.title}}</p>
+       <img :src="item.poster" alt="copertina">
+       <p>{{item.author}}</p>
+       <p>{{item.genre}}</p>
       </div>
-  </div>
+
+
+    </div>
 
   </body>
 </html>

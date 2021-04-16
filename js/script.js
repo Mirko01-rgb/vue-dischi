@@ -11,7 +11,7 @@ function initVue() {
         el: '#app',
         data: {
           singers:[],
-          
+          //singe:[],
 
 
         },
@@ -27,7 +27,19 @@ function initVue() {
                 this.singers = data.data.response;
                 console.log(this.singers);
 
+              // for (var i = 0; i < this.singers.length; i++) {
+              //
+              //   const singer = this.singers[i]
+              //   //console.log(singer);
+              //   this.singe.push(singer)
+              //
+              // }
+              // PUSHO SENZA FOR
+              // this.singe.push(data.data.response)
+              // console.log(this.singe);
 
+              //PUSHO CON FOR
+              //console.log(this.singe);
 
 
             })
